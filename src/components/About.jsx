@@ -4,20 +4,19 @@ export default function About() {
       
       <h2 className="section-title">About</h2>
 
-      <p className="about-text">
-  I'm <strong>Kanhaiya Kumar Singh</strong>, a B.Tech Information Technology student focused on
+     <p className="about-text">
+  I'm <strong>Kanhaiya Kumar Singh</strong>, a B.Tech IT student passionate about
   <strong> Software Development</strong>,
   <strong> MERN Stack Development</strong>, and
-  <strong> AI Web Applications</strong>.
+  <strong> AI-Powered Web Applications</strong>.
 
   <br />
 
-  I enjoy building <strong>user-centric web applications</strong> and
-  <strong> API-driven solutions</strong> while continuously strengthening my
+  I build <strong>user-centric web applications</strong> and
+  <strong> API-driven solutions</strong> while improving my
   <strong> problem-solving</strong> and
   <strong> software engineering</strong> skills.
-      </p>
-
+</p>
       <div className="timeline">
 
         <div className="timeline-item">
