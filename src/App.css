@@ -22,7 +22,7 @@ body{font-family:"Poppins",sans-serif}
 
 /* ===== HERO ===== */
 .hero{
-  min-height:100vh;
+  min-height:80vh;
   background:radial-gradient(circle at top,#020617,#000814);
 }
 .hero h1{font-size:3.4rem;font-weight:700}
@@ -451,7 +451,7 @@ body{font-family:"Poppins",sans-serif}
 
 /* ===== HERO LEFT-RIGHT LAYOUT ===== */
 .hero-flex{
-  min-height:75vh;
+  min-height:80vh;
   display:flex;
   align-items:center;
   justify-content:center;
