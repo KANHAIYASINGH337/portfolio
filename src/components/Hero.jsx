@@ -54,7 +54,7 @@ useEffect(() => {
 
           {/* ✅ DOWNLOAD CV (PDF) */}
           <a
-            href="/cv.pdf"
+            href="/resume.pdf"
             className="btn outline"
             target="_blank"
             rel="noopener noreferrer"
