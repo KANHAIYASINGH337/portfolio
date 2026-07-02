@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -11,8 +11,27 @@ import "./App.css";
 function App() {
   const [theme, setTheme] = useState("dark");
 
+  useEffect(() => {
+    const cursor = document.querySelector(".cursor-glow");
+
+    const moveCursor = (e) => {
+      if (cursor) {
+        cursor.style.left = e.clientX + "px";
+        cursor.style.top = e.clientY + "px";
+      }
+    };
+
+    window.addEventListener("mousemove", moveCursor);
+
+    return () => {
+      window.removeEventListener("mousemove", moveCursor);
+    };
+  }, []);
+
   return (
     <div className={theme}>
+      <div className="cursor-glow"></div>
+
       <Navbar theme={theme} setTheme={setTheme} />
       <Hero />
       <About />
@@ -25,4 +44,3 @@ function App() {
 }
 
 export default App;
-
