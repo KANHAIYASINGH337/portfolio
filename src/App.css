@@ -30,7 +30,7 @@ body{font-family:"Poppins",sans-serif}
 .subtitle{font-size:1.3rem;margin:15px 0 30px;opacity:.85}
 
 .typing{
-  white-space:nowrap;overflow:hidden;
+  white-space:normal;overflow:hidden;
   border-right:3px solid #38bdf8;
   animation:typing 3s steps(30),blink .7s infinite
 }
