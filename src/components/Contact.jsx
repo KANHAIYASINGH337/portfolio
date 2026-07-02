@@ -7,7 +7,15 @@ export default function Contact() {
         Let's build something impactful together. Feel free to reach out.
       </p>
 
-      <p className="contact-email">📧 skanahaiya05@gmail.com</p>
+      <p
+  className="contact-email"
+  onClick={() => {
+    navigator.clipboard.writeText("skanahaiya05@gmail.com");
+    alert("Email copied!");
+  }}
+>
+  📧 skanahaiya05@gmail.com
+</p>
 
       <form className="contact-form">
         <input type="text" placeholder="Your Name" required />
