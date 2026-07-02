@@ -504,33 +504,44 @@ body{font-family:"Poppins",sans-serif}
 }
 
 /* ===== MOBILE ===== */
-@media(max-width:768px){
+ @media(max-width:768px){
+
   .hero-flex{
-    flex-direction:column-reverse;
-    text-align:center;
-    padding:120px 20px 80px;
+    flex-direction:column;
+    gap:30px;
+    padding:100px 20px 50px;
   }
 
   .hero-title{
-    font-size:2.2rem;
+    font-size:1.9rem;
+    line-height:1.3;
+  }
+
+  .hero-left{
+    order:2;
+  }
+
+  .hero-right{
+    order:1;
   }
 
   .profile-ring{
-    width:240px;
-    height:240px;
-    margin-bottom:30px;
+    width:220px;
+    height:280px;
+    margin:0 auto;
   }
 
   .hero-buttons{
     flex-direction:column;
+    width:100%;
   }
 
   .hero-buttons a{
     width:100%;
-    text-align:center;
+    max-width:280px;
+    margin:auto;
   }
 }
-
 /* ===== HERO BUTTON CENTER FIX ===== */
 .hero-buttons{
   display:flex;
