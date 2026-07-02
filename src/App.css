@@ -461,12 +461,24 @@ body{font-family:"Poppins",sans-serif}
 
 /* ===== HERO LEFT-RIGHT LAYOUT ===== */
 .hero-flex{
+  min-height:100vh;
   display:flex;
   align-items:center;
-  justify-content:space-between;
+  justify-content:center;
   gap:60px;
-  padding:120px 10%;
-  text-align:center;   /* 👈 center nahi */
+  padding:80px 8%;
+}
+
+.hero-left{
+  flex:1;
+  max-width:650px;
+}
+
+.hero-right{
+  flex:1;
+  display:flex;
+  justify-content:center;
+  align-items:center;
 }
 
 .hero-left{

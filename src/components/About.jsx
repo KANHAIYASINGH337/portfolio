@@ -41,7 +41,7 @@ export default function About() {
             <h3>2019 – 2020</h3>
             <p>
               <strong>Secondary (CBSE – Class X)</strong><br />
-              Percentage: <strong>89.4%</strong>
+              Percentage: <strong>89.2%</strong>
             </p>
           </div>
         </div>
