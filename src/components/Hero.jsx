@@ -5,15 +5,16 @@ export default function Hero() {
   return (
     <section id="home" className="hero hero-flex">
 
-      {/* LEFT TEXT */}
-      <div className="hero-left">
-        <h1 className="typing hero-title">
-          Hi, I'm <span>Kanhaiya Kumar Singh</span>
-        </h1>
+  <div className="hero-left">
 
-        <p className="subtitle">
-          B.Tech IT Student | Web Developer
-        </p>
+   <h1 className="hero-title">
+  Hi, I'm <span>Kanhaiya Kumar Singh</span>
+</h1>
+
+    <p className="subtitle">
+      B.Tech IT Student | Web Developer
+    </p>
+
 
         <div className="hero-buttons">
           <a href="#contact" className="btn">Contact Me</a>
