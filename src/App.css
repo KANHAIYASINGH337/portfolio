@@ -483,8 +483,10 @@ body{font-family:"Poppins",sans-serif}
 }
 
 .hero-title{
-  font-size:3.4rem;
+  font-size:3.8rem;
   font-weight:700;
+  line-height:1.15;
+  margin-bottom:15px;
 }
 
 /* ===== PROFILE IMAGE FIX (NO HAIR CUT) ===== */
