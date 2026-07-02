@@ -5,10 +5,17 @@ export default function About() {
       <h2 className="section-title">About</h2>
 
       <p className="about-text">
-        I’m <strong>Kanhaiya Kumar Singh</strong>, a B.Tech Information Technology student
-        with a strong interest in Web Development and problem-solving.
-        I enjoy building clean, scalable, and user-friendly applications
-        using modern web technologies.
+  I'm <strong>Kanhaiya Kumar Singh</strong>, a B.Tech Information Technology student focused on
+  <strong> Software Development</strong>,
+  <strong> MERN Stack Development</strong>, and
+  <strong> AI Web Applications</strong>.
+
+  <br />
+
+  I enjoy building <strong>user-centric web applications</strong> and
+  <strong> API-driven solutions</strong> while continuously strengthening my
+  <strong> problem-solving</strong> and
+  <strong> software engineering</strong> skills.
       </p>
 
       <div className="timeline">
@@ -23,6 +30,17 @@ export default function About() {
             </p>
           </div>
         </div>
+
+        <div className="timeline-item">
+  <span className="dot"></span>
+  <div className="content">
+    <h3>2023 – 2024</h3>
+    <p>
+        <strong>Student Member, ISTE</strong><br />
+          Indian Society for Technical Education
+    </p>
+  </div>
+</div>
 
         <div className="timeline-item">
           <span className="dot"></span>
