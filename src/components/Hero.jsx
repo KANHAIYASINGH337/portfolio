@@ -3,19 +3,19 @@ import profile from "../assets/image.png"; // ya profile.jpg
 
 export default function Hero() {
   return (
-    <section id="home" className="hero hero-flex">
+   <section id="home" className="hero hero-flex">
 
   <div className="hero-left">
 
-   <h1 className="hero-title">
-  Hi, I'm <span>Kanhaiya Kumar Singh</span>
-</h1>
+    <h1 className="hero-title">
+      <span className="typing-line1">Hi, I'm</span>
+      <br />
+      <span className="typing-line2">Kanhaiya Kumar Singh</span>
+    </h1>
 
     <p className="subtitle">
-      B.Tech IT Student | Web Developer
+      Mern Stack Developer | AI Web Applications | Software Engineer
     </p>
-
-
         <div className="hero-buttons">
           <a href="#contact" className="btn">Contact Me</a>
 
