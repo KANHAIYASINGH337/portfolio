@@ -29,34 +29,6 @@ body{font-family:"Poppins",sans-serif}
 .hero h1 span{color:#38bdf8;text-shadow:0 0 18px rgba(56,189,248,.9)}
 .subtitle{font-size:1.3rem;margin:15px 0 30px;opacity:.85}
 
-.typing-line1{
-  display:inline-block;
-  overflow:hidden;
-  white-space:nowrap;
-  width:0;
-  animation:typing1 1s steps(7,end) forwards;
-}
-
-.typing-line2{
-  display:inline-block;
-  overflow:hidden;
-  white-space:nowrap;
-  width:0;
-  color:#38bdf8;
-  text-shadow:0 0 18px rgba(56,189,248,.7);
-  animation:typing2 2s steps(22,end) forwards;
-  animation-delay:1s;
-}
-
-@keyframes typing1{
-  from{width:0}
-  to{width:7ch}
-}
-
-@keyframes typing2{
-  from{width:0}
-  to{width:22ch}
-}
 
 .hero-buttons{display:flex;gap:18px}
 .hero-buttons a{
