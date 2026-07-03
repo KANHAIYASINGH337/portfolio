@@ -4,7 +4,7 @@ export default function Contact() {
       <h2 className="contact-title">Contact</h2>
 
       <p className="contact-sub">
-        Let's build something impactful together. Feel free to reach out.
+        Ready to contribute, collaborate, and create impactful solutions. Feel free to reach out.
       </p>
 
       <p
