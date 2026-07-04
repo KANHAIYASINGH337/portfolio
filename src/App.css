@@ -678,12 +678,12 @@ body{font-family:"Poppins",sans-serif}
   width:18px;
   height:18px;
   border-radius:50%;
-  background:#38bdf8;
+  background:#7fd3f7;
 
   box-shadow:
-    0 0 15px #38bdf8,
-    0 0 30px #38bdf8,
-    0 0 50px #38bdf8;
+    0 0 15px #75d3f7,
+    0 0 30px #7fd3f7,
+    0 0 50px #7fd3f7;
 
   pointer-events:none;
   transform:translate(-50%,-50%);
