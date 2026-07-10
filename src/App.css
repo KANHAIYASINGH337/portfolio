@@ -312,6 +312,17 @@ body{font-family:"Poppins",sans-serif}
   transition:background .3s,color .3s,border-color .3s;
 }
 
+/* ===== DARK MODE FOOTER ===== */
+
+
+.dark .footer{
+  background:#061439;
+  color:#cbd5e1;
+  border-top:1px solid rgba(56,191,248,.45);
+}
+
+
+
 /* ===== RESPONSIVE (MERGED) ===== */
 @media(max-width:768px){
   .navbar{flex-direction:column;gap:10px}
