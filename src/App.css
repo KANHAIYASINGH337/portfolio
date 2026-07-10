@@ -673,18 +673,6 @@ body{font-family:"Poppins",sans-serif}
 
 /* RESPONSIVE */
 
-@media (max-width: 900px) {
-  .projects-cards {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  .projects-cards {
-    grid-template-columns: 1fr;
-  }
-}
-
 /* ===== RESPONSIVE ===== */
 @media(max-width:992px){
   .projects-cards{
