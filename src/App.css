@@ -691,3 +691,10 @@ body{font-family:"Poppins",sans-serif}
 
   will-change: transform;
 }
+
+
+@media (max-width: 768px), (hover: none), (pointer: coarse) {
+  .cursor-glow {
+    display: none;
+  }
+}
