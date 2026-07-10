@@ -672,8 +672,6 @@ body{font-family:"Poppins",sans-serif}
   }
 }
 
-
-
 .cursor-glow{
   position: fixed;
   top: 0;
@@ -688,15 +686,11 @@ body{font-family:"Poppins",sans-serif}
     0 0 15px #75d3f7,
     0 0 30px #7fd3f7,
     0 0 50px #7fd3f7;
-
   pointer-events: none;
-
   transform: translate(-100px, -100px);
   z-index: 9999;
-
   will-change: transform;
 }
-
 @media (max-width:768px),(hover:none),(pointer:coarse){
   .cursor-glow{
     display:none;
