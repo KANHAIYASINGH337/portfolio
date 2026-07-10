@@ -548,13 +548,6 @@ body{font-family:"Poppins",sans-serif}
     margin:0 auto;
   }
 }
-/* ===== HERO BUTTON CENTER FIX ===== */
-.hero-buttons{
-  display:flex;
-  justify-content:center;   /* 👈 CENTER BUTTONS */
-  gap:18px;
-}
-
 
 
 /* ===== PROFESSIONAL PROJECTS ===== */
