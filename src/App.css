@@ -309,17 +309,7 @@ body{font-family:"Poppins",sans-serif}
   padding:22px;
   text-align:center;
   font-size:.9rem;
-  transition:background .3s,color .3s;
-}
-
-.dark .footer{
-  background:#000814;
-  color:#cbd5e1;
-}
-
-.light .footer{
-  background:#d8cccc;
-  color:#334155;
+  transition:background .3s,color .3s,border-color .3s;
 }
 
 /* ===== RESPONSIVE (MERGED) ===== */
