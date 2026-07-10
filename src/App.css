@@ -629,6 +629,32 @@ body{font-family:"Poppins",sans-serif}
   color: rgba(255, 255, 255, 0.9);
 }
 
+/* ===== LIGHT MODE PROJECTS FIX ===== */
+
+.light .project-card{
+  background:#ffffff;
+  border:1px solid rgba(56,189,248,.2);
+}
+
+.light .project-card h3{
+  color:#0284c7;
+}
+
+.light .project-card p{
+  color:#334155;
+}
+
+.light .project-tech{
+  color:#0f172a;
+  background:#f8fafc;
+  border-color:#38bdf8;
+}
+
+.light .project-link{
+  color:#0284c7;
+}
+
+
 /* LIVE DEMO BUTTON */
 
 .project-link {
