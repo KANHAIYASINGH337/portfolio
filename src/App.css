@@ -314,11 +314,18 @@ body{font-family:"Poppins",sans-serif}
 
 /* ===== DARK MODE FOOTER ===== */
 
-
 .dark .footer{
   background:#061439;
   color:#cbd5e1;
   border-top:1px solid rgba(56,191,248,.45);
+}
+
+/* ===== LIGHT MODE FOOTER ===== */
+
+.light .footer{
+  background:#d8c7c7;   /* ya #c5aeae agar navbar ke same chahiye */
+  color:#334155;
+  border-top:1px solid rgba(56,191,248,.18);
 }
 
 
