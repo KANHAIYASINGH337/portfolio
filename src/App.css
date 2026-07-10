@@ -30,7 +30,13 @@ body{font-family:"Poppins",sans-serif}
 .subtitle{font-size:1.3rem;margin:15px 0 30px;opacity:.85}
 
 
-.hero-buttons{display:flex;gap:18px;justify-content:flex-start}
+.hero-buttons{
+  display:flex;
+  gap:18px;
+  justify-content:center;
+  flex-wrap:wrap;
+  align-items:center;
+}
 .hero-buttons a{
   padding:14px 32px;border-radius:30px;
   background:linear-gradient(90deg,#38bdf8,#22d3ee);
