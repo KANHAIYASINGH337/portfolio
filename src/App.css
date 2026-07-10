@@ -326,6 +326,7 @@ body{font-family:"Poppins",sans-serif}
   background:#d8c7c7;   /* ya #c5aeae agar navbar ke same chahiye */
   color:#334155;
   border-top:1px solid rgba(56,191,248,.18);
+  box-shadow:0 -4px 20px rgba(0,0,0,.04);
 }
 
 
