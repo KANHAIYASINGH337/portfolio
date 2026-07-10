@@ -680,5 +680,13 @@ body{font-family:"Poppins",sans-serif}
   border-radius: 50%;
   background: #7fd3f7;
 
- 
+  box-shadow:
+    0 0 15px rgba(127, 211, 247, 0.8),
+    0 0 35px rgba(127, 211, 247, 0.6),
+    0 0 60px rgba(127, 211, 247, 0.4);
+
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  will-change: transform;
 }
