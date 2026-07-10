@@ -12,13 +12,16 @@ function App() {
   const [theme, setTheme] = useState("dark");
 
   useEffect(() => {
+    // Mobile par cursor glow ki zarurat nahi
+    if (window.matchMedia("(hover: none), (pointer: coarse)").matches) {
+      return;
+    }
+
     const cursor = document.querySelector(".cursor-glow");
+    if (!cursor) return;
 
     const moveCursor = (e) => {
-      if (cursor) {
-        cursor.style.left = e.clientX + "px";
-        cursor.style.top = e.clientY + "px";
-      }
+      cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
     };
 
     window.addEventListener("mousemove", moveCursor);
