@@ -672,29 +672,33 @@ body{font-family:"Poppins",sans-serif}
   }
 }
 
-.cursor-glow {
 
+
+.cursor-glow{
   position: fixed;
+  top: 0;
+  left: 0;
+
   width: 18px;
   height: 18px;
   border-radius: 50%;
   background: #7fd3f7;
 
   box-shadow:
-    0 0 15px rgba(127, 211, 247, 0.8),
-    0 0 35px rgba(127, 211, 247, 0.6),
-    0 0 60px rgba(127, 211, 247, 0.4);
+    0 0 15px #75d3f7,
+    0 0 30px #7fd3f7,
+    0 0 50px #7fd3f7;
 
   pointer-events: none;
-  transform: translate(-50%, -50%);
+
+  transform: translate(-100px, -100px);
   z-index: 9999;
 
   will-change: transform;
 }
 
-
-@media (max-width: 768px), (hover: none), (pointer: coarse) {
-  .cursor-glow {
-    display: none;
+@media (max-width:768px),(hover:none),(pointer:coarse){
+  .cursor-glow{
+    display:none;
   }
 }
