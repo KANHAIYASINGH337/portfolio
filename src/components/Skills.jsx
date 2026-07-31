@@ -72,7 +72,7 @@ export default function Skills() {
           <div
             key={category}
             className="skill-category-box"
-            style={{ animationDelay: `${catIdx * 0.1}s` }}
+            style={{ animationDelay: `${catIdx * 0.2 + 0.1}s` }}
           >
             <h3 className="skill-category-title">{category}</h3>
             <div className="skill-pills">
@@ -80,7 +80,7 @@ export default function Skills() {
                 <div
                   key={sIdx}
                   className="skill-pill"
-                  style={{ animationDelay: `${catIdx * 0.1 + sIdx * 0.05}s` }}
+                  style={{ animationDelay: `${catIdx * 0.2 + sIdx * 0.08 + 0.15}s` }}
                 >
                   <span className="skill-pill-icon">{skill.icon}</span>
                   <span className="skill-pill-name">{skill.label}</span>

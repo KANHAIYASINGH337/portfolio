@@ -42,7 +42,7 @@ export default function About() {
       </p>
 
       <div className="timeline">
-        <div className="timeline-item" style={{ animationDelay: "0.1s" }}>
+        <div className="timeline-item" style={{ animationDelay: "0.2s" }}>
           <span className="dot"></span>
           <div className="content">
             <h3>2023 – 2027</h3>
@@ -53,7 +53,7 @@ export default function About() {
           </div>
         </div>
 
-        <div className="timeline-item" style={{ animationDelay: "0.2s" }}>
+        <div className="timeline-item" style={{ animationDelay: "0.45s" }}>
           <span className="dot"></span>
           <div className="content">
             <h3>2023 – 2024</h3>
@@ -64,7 +64,7 @@ export default function About() {
           </div>
         </div>
 
-        <div className="timeline-item" style={{ animationDelay: "0.3s" }}>
+        <div className="timeline-item" style={{ animationDelay: "0.7s" }}>
           <span className="dot"></span>
           <div className="content">
             <h3>2021 – 2022</h3>
@@ -75,7 +75,7 @@ export default function About() {
           </div>
         </div>
 
-        <div className="timeline-item" style={{ animationDelay: "0.4s" }}>
+        <div className="timeline-item" style={{ animationDelay: "0.95s" }}>
           <span className="dot"></span>
           <div className="content">
             <h3>2019 – 2020</h3>

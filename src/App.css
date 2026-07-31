@@ -340,7 +340,7 @@ body {
 @keyframes skillFadeIn {
   from {
     opacity: 0;
-    transform: translateY(40px);
+    transform: translateY(45px);
   }
   to {
     opacity: 1;
@@ -351,7 +351,7 @@ body {
 @keyframes skillPopIn {
   0% {
     opacity: 0;
-    transform: translateY(24px) scale(0.96);
+    transform: translateY(30px) scale(0.95);
   }
   100% {
     opacity: 1;
@@ -369,20 +369,20 @@ body {
 
 .skills-pill-grid .skill-category-box {
   opacity: 0;
-  transform: translateY(40px);
+  transform: translateY(45px);
 }
 
 .skills-pill-grid.animate-in .skill-category-box {
-  animation: skillFadeIn 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation: skillFadeIn 0.95s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
 .skills-pill-grid .skill-pill {
   opacity: 0;
-  transform: translateY(24px) scale(0.96);
+  transform: translateY(30px) scale(0.95);
 }
 
 .skills-pill-grid.animate-in .skill-pill {
-  animation: skillPopIn 0.75s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation: skillPopIn 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
 .skill-category-box {

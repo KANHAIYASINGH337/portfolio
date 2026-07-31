@@ -69,7 +69,7 @@ export default function Projects() {
           <div
             key={index}
             className="project-card"
-            style={{ animationDelay: `${index * 0.15}s` }}
+            style={{ animationDelay: `${index * 0.25 + 0.15}s` }}
           >
             <div className="project-icon">{project.icon}</div>
 
