@@ -467,8 +467,16 @@ body {
   text-align: center;
 }
 
+/* ===== CONTACT ===== */
+.contact-section {
+  padding: 110px 20px 140px;
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
 .contact-title {
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-weight: 700;
   margin-bottom: 10px;
   position: relative;
@@ -487,26 +495,23 @@ body {
 }
 
 .contact-sub {
-  font-size: 1.15rem;
-  line-height: 1.5;
+  font-size: 1.25rem;
+  line-height: 1.2;
   opacity: 0.85;
-  margin: 28px 0 16px;
+  margin: 32px 0 18px;
 }
 
 .contact-email {
-  font-size: 1.15rem;
-  color: #38bdf8;
-  margin-bottom: 28px;
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin-bottom: 30px;
   cursor: pointer;
-  transition: opacity 0.2s ease;
 }
-
-.contact-email:hover { opacity: 0.8; }
 
 .contact-form {
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 20px;
   align-items: center;
 }
 
@@ -515,23 +520,11 @@ body {
   width: 100%;
   padding: 14px 16px;
   border-radius: 14px;
+  border: 2px solid transparent;
   font-size: 1rem;
   font-family: inherit;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.dark .contact-form input,
-.dark .contact-form textarea {
-  background: rgba(255, 255, 255, 0.08);
-  border: 1.5px solid rgba(56, 189, 248, 0.3);
-  color: #ffffff;
-}
-
-.light .contact-form input,
-.light .contact-form textarea {
-  background: #ffffff;
-  border: 1.5px solid #cbd5e1;
-  color: #0f172a;
+  background: #fff;
+  color: #020617;
 }
 
 .contact-form input:focus,
@@ -542,8 +535,8 @@ body {
 }
 
 .contact-form button {
-  margin-top: 10px;
-  padding: 13px 34px;
+  margin-top: 18px;
+  padding: 12px 30px;
   border: none;
   border-radius: 30px;
   background: linear-gradient(90deg, #f9a17b, #fbbf24);
@@ -555,7 +548,7 @@ body {
 }
 
 .contact-form button:hover {
-  transform: translateY(-3px);
+  transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(251, 191, 36, 0.4);
 }
 
@@ -569,7 +562,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 22px;
-  margin-top: 45px;
+  margin-top: 50px;
 }
 
 .contact-icons a {
@@ -577,8 +570,13 @@ body {
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.dark .contact-icons a { color: #ffffff; }
-.light .contact-icons a { color: #334155; }
+.dark .contact-icons a {
+  color: #ffffff;
+}
+
+.light .contact-icons a {
+  color: #334155;
+}
 
 .contact-icons a:hover {
   color: #38bdf8;
