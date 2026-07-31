@@ -263,21 +263,21 @@ body {
   font-size: 1.1rem;
 }
 
-/* ===== ABOUT (WIDE 2-COLUMN BALANCED GRID MATCHING SKILLS SECTION) ===== */
+/* ===== ABOUT SECTION (ADITYA PORTFOLIO MATCHING LAYOUT) ===== */
 .about-section {
   padding: 80px 4%;
-  max-width: 1280px;
+  max-width: 1100px;
   margin: auto;
-  text-align: center;
+  text-align: left;
 }
 
-.about-section .about-bio-card,
+.about-section .about-text,
 .about-section .timeline-item {
   opacity: 0;
   transform: translateY(40px);
 }
 
-.about-section.animate-in .about-bio-card {
+.about-section.animate-in .about-text {
   animation: skillFadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
@@ -285,126 +285,53 @@ body {
   animation: skillFadeIn 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
-.about-grid {
-  margin-top: 45px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 48px;
-  text-align: left;
-  align-items: start;
-}
-
-.about-bio-card {
-  padding: 32px 28px;
-  border-radius: 20px;
-  transition: all 0.35s ease;
-  backdrop-filter: blur(12px);
-}
-
-.dark .about-bio-card {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(56, 189, 248, 0.25);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
-}
-
-.light .about-bio-card {
-  background: #ffffff;
-  border: 1px solid rgba(56, 189, 248, 0.2);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
-}
-
 .about-text {
   font-size: 1.15rem;
-  line-height: 1.8;
-  margin-bottom: 16px;
+  line-height: 1.85;
+  margin-bottom: 42px;
   opacity: 0.95;
-}
-
-.about-text-sub {
-  font-size: 1.02rem;
-  line-height: 1.7;
-  opacity: 0.85;
-  margin-bottom: 24px;
-}
-
-.about-highlights {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  margin-top: 20px;
-}
-
-.highlight-pill {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding: 10px 16px;
-  border-radius: 12px;
-  font-size: 0.98rem;
-  font-weight: 550;
-}
-
-.dark .highlight-pill {
-  background: rgba(56, 189, 248, 0.1);
-  border: 1px solid rgba(56, 189, 248, 0.3);
-  color: #7fd3f7;
-}
-
-.light .highlight-pill {
-  background: rgba(2, 132, 199, 0.08);
-  border: 1px solid rgba(2, 132, 199, 0.2);
-  color: #0284c7;
-}
-
-.about-timeline-heading {
-  font-size: 1.35rem;
-  font-weight: 700;
-  margin-bottom: 24px;
-  border-left: 4px solid #38bdf8;
-  padding-left: 12px;
-}
-
-.light .about-timeline-heading {
-  color: #0f172a;
-  border-left-color: #0284c7;
+  max-width: 1000px;
 }
 
 .timeline {
   position: relative;
-  margin-left: 20px;
-  padding-left: 35px;
+  margin-left: 10px;
+  padding-left: 32px;
   border-left: 2px solid rgba(56, 189, 248, 0.4);
   text-align: left;
 }
 
 .timeline-item {
   position: relative;
-  margin-bottom: 35px;
+  margin-bottom: 32px;
 }
 
 .timeline-item .dot {
   position: absolute;
-  left: -42px;
-  top: 6px;
+  left: -39px;
+  top: 8px;
   width: 12px;
   height: 12px;
-  background: #38bdf8;
+  background: #f97316;
   border-radius: 50%;
-  box-shadow: 0 0 12px rgba(56, 189, 248, 0.8);
+  box-shadow: 0 0 12px rgba(249, 115, 22, 0.8);
 }
 
 .timeline-item h3 {
-  font-size: 1.3rem;
+  font-size: 1.15rem;
+  font-weight: 500;
   margin-bottom: 4px;
-  color: #38bdf8;
+  color: #ffffff;
 }
 
-.light .timeline-item h3 { color: #0284c7; }
+.light .timeline-item h3 {
+  color: #0f172a;
+}
 
-.timeline-item p {
-  font-size: 1.05rem;
-  line-height: 1.6;
-  opacity: 0.9;
+.sub-detail {
+  font-size: 0.95rem;
+  opacity: 0.75;
+  margin-top: 4px;
 }
 
 /* ===== SKILLS (3-COLUMN WIDE GRID LIKE ADITYA'S PORTFOLIO) ===== */
