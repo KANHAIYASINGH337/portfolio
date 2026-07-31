@@ -3,22 +3,44 @@ import React, { useState } from "react";
 export default function Contact() {
   const [status, setStatus] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    const name = e.target.name.value;
-    const email = e.target.email.value;
-    const message = e.target.message.value;
+    setStatus("Sending message...");
 
-    // Fallback direct mailto link to guarantee email sending without backend setup
-    const mailtoUrl = `mailto:skanahaiya05@gmail.com?subject=Portfolio Inquiry from ${encodeURIComponent(
-      name
-    )}&body=${encodeURIComponent(
-      `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
-    )}`;
+    const formData = new FormData(e.target);
+    // Web3Forms Access Key for skanahaiya05@gmail.com
+    formData.append("access_key", process.env.REACT_APP_WEB3FORMS_KEY || "YOUR_ACCESS_KEY");
 
-    window.location.href = mailtoUrl;
-    setStatus("Thank you! Your email client has been opened to send the message.");
-    e.target.reset();
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        setStatus("🎉 Message sent successfully! I will get back to you soon.");
+        e.target.reset();
+      } else {
+        // Fallback to mailto if access key is not added yet
+        const name = formData.get("name");
+        const email = formData.get("email");
+        const message = formData.get("message");
+        window.location.href = `mailto:skanahaiya05@gmail.com?subject=Portfolio Inquiry from ${encodeURIComponent(
+          name
+        )}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
+        setStatus("Email client opened to complete sending.");
+      }
+    } catch (error) {
+      const name = formData.get("name");
+      const email = formData.get("email");
+      const message = formData.get("message");
+      window.location.href = `mailto:skanahaiya05@gmail.com?subject=Portfolio Inquiry from ${encodeURIComponent(
+        name
+      )}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
+      setStatus("Email client opened to complete sending.");
+    }
   };
 
   return (
