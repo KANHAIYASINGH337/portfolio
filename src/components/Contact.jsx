@@ -9,7 +9,7 @@ export default function Contact() {
 
     const formData = new FormData(e.target);
     // Web3Forms Access Key for skanahaiya05@gmail.com
-    formData.append("access_key", process.env.REACT_APP_WEB3FORMS_KEY || "YOUR_ACCESS_KEY");
+    formData.append("access_key", "bdd80518-0ea6-44bd-9062-dc300a60ba54");
 
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
