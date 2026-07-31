@@ -15,8 +15,8 @@ body {
 }
 
 .light {
-  background: #f8fafc;
-  color: #0f172a;
+  background: #ece4e4;
+  color: #020617;
 }
 
 .dark {
@@ -43,8 +43,8 @@ body {
 }
 
 .light .navbar {
-  background: rgba(255, 255, 255, 0.95);
-  border-bottom: 1px solid #e2e8f0;
+  background: #c5aeae;
+  border-bottom: 1px solid rgba(56, 191, 248, 0.18);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
 
@@ -622,9 +622,10 @@ body {
 }
 
 .light .footer {
-  background: #e2e8f0;
+  background: #d8c7c7;
   color: #334155;
   border-top: 1px solid rgba(56, 191, 248, 0.18);
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.04);
 }
 
 /* ===== RESPONSIVE ===== */
