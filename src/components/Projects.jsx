@@ -2,15 +2,6 @@ import "../App.css";
 
 const projects = [
   {
-    icon: "🏥",
-    title: "ElderGuard AI",
-    description:
-      "AI-powered healthcare monitoring system with real-time vitals tracking and emergency alerts. Led React frontend & API integration. Won Best AI Solution (70+ teams).",
-    tech: "React.js • REST APIs • WebSockets",
-    badge: "🏆 Hackathon Winner",
-    url: null, // Hardware/camera project - no external link attached
-  },
-  {
     icon: "🍽️",
     title: "Recipe Hub",
     description:
@@ -48,7 +39,9 @@ export default function Projects() {
   return (
     <section id="projects" className="projects-pro section">
       <h2>Projects</h2>
-      <p className="section-sub">Some of the work I have built</p>
+      <p className="section-sub">
+        Featured full-stack applications, REST API architectures, and software engineering projects
+      </p>
 
       <div className="projects-cards">
         {projects.map((project, index) => (
@@ -77,4 +70,5 @@ export default function Projects() {
     </section>
   );
 }
+
 
