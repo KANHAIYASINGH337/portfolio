@@ -27,7 +27,7 @@ export default function Navbar({ theme, setTheme }) {
           onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
           aria-label="Toggle Theme"
         >
-          {theme === "dark" ? "☀️" : "🌙"}
+          {theme === "dark" ? <i className="fas fa-sun"></i> : <i className="fas fa-moon"></i>}
         </button>
 
         {/* HAMBURGER */}
