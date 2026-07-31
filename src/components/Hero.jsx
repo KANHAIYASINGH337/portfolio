@@ -53,7 +53,7 @@ useEffect(() => {
           <a href="#contact" className="btn">Contact Me</a>
 
           <a
-            href="/resume.pdf.pdf"
+            href="/Kanhaiya_Kumar_Singh_Resume.pdf"
             className="btn outline"
             target="_blank"
             rel="noopener noreferrer"
