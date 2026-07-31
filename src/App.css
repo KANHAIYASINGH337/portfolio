@@ -315,20 +315,40 @@ body {
   opacity: 0.9;
 }
 
-/* ===== SKILLS ===== */
+/* ===== SKILLS (3-COLUMN WIDE GRID LIKE ADITYA'S PORTFOLIO) ===== */
 .skills-pro {
-  padding: 80px 8%;
-  max-width: 1100px;
+  padding: 80px 4%;
+  max-width: 1280px;
   margin: auto;
   text-align: center;
 }
 
+@keyframes skillFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .skills-pill-grid {
-  margin-top: 45px;
+  margin-top: 50px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 36px 48px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 44px 36px;
   text-align: left;
+}
+
+.skills-pill-grid .skill-category-box {
+  opacity: 0;
+  transform: translateY(35px);
+}
+
+.skills-pill-grid.animate-in .skill-category-box {
+  animation: skillFadeIn 0.65s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
 .skill-category-box {
@@ -639,10 +659,10 @@ body {
 }
 
 /* ===== RESPONSIVE ===== */
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
   .skills-pill-grid {
-    grid-template-columns: 1fr;
-    gap: 32px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 36px 30px;
   }
 
   .projects-cards {
@@ -652,6 +672,10 @@ body {
 }
 
 @media (max-width: 768px) {
+  .skills-pill-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
   .hamburger {
     display: block;
   }

@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from "react";
 import "../App.css";
 
 const skillCategories = [
@@ -56,16 +57,40 @@ const skillCategories = [
 ];
 
 export default function Skills() {
+  const [isVisible, setIsVisible] = useState(false);
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        }
+      },
+      { threshold: 0.15 }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <section id="skills" className="skills-pro section">
+    <section id="skills" className="skills-pro section" ref={sectionRef}>
       <h2>Skills & Tooling</h2>
       <p className="section-sub">
         A comprehensive look at the languages, frameworks, tools, and CS core fundamentals I work with
       </p>
 
-      <div className="skills-pill-grid">
+      <div className={`skills-pill-grid ${isVisible ? "animate-in" : ""}`}>
         {skillCategories.map((group, idx) => (
-          <div key={idx} className="skill-category-box">
+          <div
+            key={idx}
+            className="skill-category-box"
+            style={{ animationDelay: `${idx * 0.12}s` }}
+          >
             <h3 className="skill-category-title">{group.category}</h3>
             <div className="skill-pills">
               {group.skills.map((skill, sIdx) => (
@@ -81,6 +106,7 @@ export default function Skills() {
     </section>
   );
 }
+
 
 
 
