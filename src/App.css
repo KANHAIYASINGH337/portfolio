@@ -263,32 +263,110 @@ body {
   font-size: 1.1rem;
 }
 
-/* ===== ABOUT ===== */
+/* ===== ABOUT (WIDE 2-COLUMN BALANCED GRID MATCHING SKILLS SECTION) ===== */
 .about-section {
-  padding: 80px 8%;
-  max-width: 1000px;
+  padding: 80px 4%;
+  max-width: 1280px;
   margin: auto;
+  text-align: center;
 }
 
-.about-section .about-text,
+.about-section .about-bio-card,
 .about-section .timeline-item {
   opacity: 0;
-  transform: translateY(30px);
+  transform: translateY(40px);
 }
 
-.about-section.animate-in .about-text {
-  animation: skillFadeIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+.about-section.animate-in .about-bio-card {
+  animation: skillFadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
 .about-section.animate-in .timeline-item {
-  animation: skillFadeIn 0.65s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation: skillFadeIn 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.about-grid {
+  margin-top: 45px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  text-align: left;
+  align-items: start;
+}
+
+.about-bio-card {
+  padding: 32px 28px;
+  border-radius: 20px;
+  transition: all 0.35s ease;
+  backdrop-filter: blur(12px);
+}
+
+.dark .about-bio-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.light .about-bio-card {
+  background: #ffffff;
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
 }
 
 .about-text {
   font-size: 1.15rem;
   line-height: 1.8;
-  margin-bottom: 40px;
-  opacity: 0.9;
+  margin-bottom: 16px;
+  opacity: 0.95;
+}
+
+.about-text-sub {
+  font-size: 1.02rem;
+  line-height: 1.7;
+  opacity: 0.85;
+  margin-bottom: 24px;
+}
+
+.about-highlights {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.highlight-pill {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 16px;
+  border-radius: 12px;
+  font-size: 0.98rem;
+  font-weight: 550;
+}
+
+.dark .highlight-pill {
+  background: rgba(56, 189, 248, 0.1);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  color: #7fd3f7;
+}
+
+.light .highlight-pill {
+  background: rgba(2, 132, 199, 0.08);
+  border: 1px solid rgba(2, 132, 199, 0.2);
+  color: #0284c7;
+}
+
+.about-timeline-heading {
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+  border-left: 4px solid #38bdf8;
+  padding-left: 12px;
+}
+
+.light .about-timeline-heading {
+  color: #0f172a;
+  border-left-color: #0284c7;
 }
 
 .timeline {
@@ -449,8 +527,8 @@ body {
 
 /* ===== PROJECTS ===== */
 .projects-pro {
-  padding: 80px 20px;
-  max-width: 1100px;
+  padding: 80px 4%;
+  max-width: 1280px;
   margin: auto;
   text-align: center;
 }
@@ -704,6 +782,11 @@ body {
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 1024px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
   .skills-pill-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 36px 30px;
