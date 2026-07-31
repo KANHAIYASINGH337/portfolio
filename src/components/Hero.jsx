@@ -52,13 +52,12 @@ useEffect(() => {
         <div className="hero-buttons">
           <a href="#contact" className="btn">Contact Me</a>
 
-          {/* ✅ DOWNLOAD CV (PDF) */}
           <a
             href="/resume.pdf.pdf"
             className="btn outline"
             target="_blank"
             rel="noopener noreferrer"
-            download
+            download="Kanhaiya_Kumar_Singh_Resume.pdf"
           >
             Download CV
           </a>
