@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from "react";
 import "../App.css";
 
 const projects = [
@@ -36,16 +37,40 @@ const projects = [
 ];
 
 export default function Projects() {
+  const [isVisible, setIsVisible] = useState(false);
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        }
+      },
+      { threshold: 0.15 }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <section id="projects" className="projects-pro section">
+    <section id="projects" className="projects-pro section" ref={sectionRef}>
       <h2>Projects</h2>
       <p className="section-sub">
         Featured full-stack applications, REST API architectures, and software engineering projects
       </p>
 
-      <div className="projects-cards">
+      <div className={`projects-cards ${isVisible ? "animate-in" : ""}`}>
         {projects.map((project, index) => (
-          <div key={index} className="project-card">
+          <div
+            key={index}
+            className="project-card"
+            style={{ animationDelay: `${index * 0.15}s` }}
+          >
             <div className="project-icon">{project.icon}</div>
 
             <h3>{project.title}</h3>
@@ -70,5 +95,6 @@ export default function Projects() {
     </section>
   );
 }
+
 
 
